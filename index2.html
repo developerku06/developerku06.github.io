@@ -20,19 +20,19 @@
     <h1 id="namakamu"></h1>
     <textarea id="text" placeholder="catatan"></textarea >
     <button onclick="kirim()">kirim</button>
+    <h4>Pesan</h5>
     <p id="catat"></p>
 
 
     <script>
         const nama = localStorage.getItem("namaUser");
-        document.getElementById("namakamu").textContent= "selamat datang " + nama
+        document.getElementById("namakamu").textContent= "selamat datang " + nama;
 
         function kirim(){
             const text= document.getElementById("text").value;
-            const file= document.getElementById("file").value;
 
             document.getElementById("catat").textContent=text;
-            document.getElementById("fol").textContent=file;
+ 
 
 
         } 
